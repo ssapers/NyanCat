@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Quantico');
+
+body {
+    background: #1a161c;
+    font-family: 'Press Start 2P', cursive;
+    color: #fafafa;
+}
+.content{
+    background: #1a161c url("../img/backgrounds.png");
+    width: 1368px;
+    margin: 0 auto;
+
+
+}
+
+.gameName {
+    text-align: center;
+    color: #fafafa;
+}
+
+canvas {
+    margin-left: 200px;
+}
+
+#player,#enemy,#points,#gameOver {
+    display: block;
+    margin: -550px auto 0;
+}
+
+#points{
+    font-family: 'Press Start 2P', cursive;
+}
+
+#stop{
+    display: none;
+}
+
+.game {
+    margin-top: 200px;
+    margin-left: 600px;
+    position: absolute;
+}
+
+#gameOver,#timer {
+    font-size: 20px;
+}
+
+.button {
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    display: inline-block;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,.5) 1px 1px, rgba(100,100,100,.3) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image:
+            linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%),
+            linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 90%, rgba(255,255,255,.3)),
+            linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+            linear-gradient(to right, rgba(125,125,125,1), rgba(255,255,255,.9) 45%, rgba(125,125,125,.5)),
+            linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5)),
+            linear-gradient(to right, rgba(223,190,170,1), rgba(255,255,255,.9) 45%, rgba(223,190,170,.5));
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+
+.button:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+
+.button:active {
+    top: 1px;
+}
+
+.btn-clear {
+    display: none;
+}
+#clickButton{
+    margin-left:370px;
+    display: block;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.btn-mute{
+
+    background-image: url("../img/mute.png");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin: -540px 1050px;
+
+}
+
+#btnMute {
+    display: none;
+
+}
+.footer{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-content{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.link__mail{
+    color: #fafafa;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="NyanCat" content="The Game NyanCat">
+    <title>NCat&NDog</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+<body>
+<div class="content">
+<div id="clickButton"></div>
+<div class="gameName"><h1>NyanCat vs NyanDog</h1></div>
+<canvas id="map"></canvas>
+<canvas id="player"></canvas>
+<canvas id="enemy"></canvas>
+<canvas id="points"></canvas>
+<div class="game">
+    <span id="gameOver"></span>
+<p id="timer"></p>
+<button id="start" class="button">Start</button>
+<button id="stop">Stop</button></div>
+<div id="btn" class="btn-mute"><button id="btnMute"  type="button"></button></div>
+<audio id="myAudio" src="sound/sound.mp3" loop autoplay ></audio>
+</div>
+<div class="footer">
+    <hr>
+    <p class="footer-content">Demo version of the game. Contact data - <a href="mailto:ssapers@gmail.com" class="link__mail">ssapers@gmail.com</a> </p>
+</div>
+<script>
+    document.getElementById("btn").onclick = function()
+    {
+        var myAudio = document.getElementById("myAudio");
+
+        if(myAudio.paused === true)
+        {
+            document.getElementById("myAudio").play();
+
+        }
+        else if (myAudio.paused === false)
+        {
+            document.getElementById("myAudio").pause();
+
+        }
+    }
+</script>
+</body>
+</html>
